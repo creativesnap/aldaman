@@ -1,0 +1,80 @@
+@font-face {
+    font-family: "cairo";
+    src: url(../webfonts/fonts/static/Cairo-Regular.ttf);
+}
+
+
+:root {
+    --font : "cairo";
+    --main-color : #D39D59;
+    --second-color : #3B7E8A;
+    --gray-color : #747474;
+}
+
+body {
+    font-family: var(--font);
+    height: 100vh;
+}
+/* Navbar */
+.navbar {
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+
+
+/* Social */
+.social {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 100%;
+    height: auto;
+
+}
+
+
+.social-item  {
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid var(--main-color);
+    padding: 15px;
+    border-radius: 15px;
+}
+.social-item i , .social-item svg {
+    color: var(--main-color);
+    font-size: 80px;
+}
+
+
+
+.social-item span {
+    display: block;
+    font-size: 18px;
+    margin: 8px 0;
+    font-weight: bold;
+    color: var(--gray-color);
+}
+
+.text-banner {
+    background-color: var(--second-color);
+    padding: 15px 0;
+    border-radius: 15px;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+@media(max-width : 575px) {
+    .social-item i , .social-item svg {
+        font-size: 50px;
+    }
+    .social-item {
+        margin-bottom: 30px;
+    }
+    
+    .text-banner  , .social-item span {
+        font-size: 16px;
+    }
+}
